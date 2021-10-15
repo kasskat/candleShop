@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    text-align: center;
+    height: 65vh;
+    background-image: linear-gradient(to bottom right, #c0b0ab3d, #9f4f2780) , url(../img/intro-image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    }
+
+.intro-image__text a {  
+    background-color: #493d1d63;
+    border: 2px solid #dfdcde59;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation-name: fallingDown;
+    animation-duration: 4s;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes fallingDown {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover { /*/reageerib hiirele/*/
+   transform: scale(1.2);
+}
+
+.intro-text {
+    background-color: #c0b0ab;
+    font-size: 1.5rem;
+    padding-top: 100px;
+    margin-top: -50px;
+    height: 30vh;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(51% 6%, 100% 0, 100% 43%, 100% 100%, 68% 95%, 35% 91%, 0 86%, 0% 43%, 0 0);
+
+}
+
+
+.intro-text h3 {
+    text-transform: uppercase;
+    color: #dedbd6;
+    text-shadow: 0 0 3px #5c311c, 0 0 7px #998377; /*/vari tähtede ümber/*/
+}
+
+.intro-text p {
+    color: #334326;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    text-align: center;
+    height: 40vh;
+    background-image: linear-gradient(to bottom right, #d5d0d560, #4d322038) , url(../img/packaging-image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: -50px;
+}
+
+.packaging-image__text a {  
+    background-color: #493d1d63;
+    border: 2px solid #dfdcde59;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.packaging-image__text a:hover { /*/reageerib hiirele/*/
+   transform: scale(1.2);
+}
+
+.packaging-text {
+    background-color: #ebe2dd;
+    font-size: 1.5rem;
+    padding-top: 100px;
+    margin-top: -50px;
+    height: 40vh;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.packaging-text h3 {
+    text-transform: uppercase;
+    color: #b8977c;
+}
+
+.packaging-text p {
+    color: #4d3220;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    text-align: center;
+    height: 60vh;
+    background-image: linear-gradient(to bottom right, #d5d0d560, #4d322038) , url(../img/tutorials-image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: -50px;
+    clip-path: polygon(50% 0, 100% 5%, 100% 43%, 100% 83%, 66% 90%, 36% 95%, 0 100%, 0% 43%, 0 6%);
+
+}
+
+.tutorials-image__text a {  
+    background-color: #493d1d63;
+    border: 2px solid #dfdcde59;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.tutorials-image__text a:hover { /*/reageerib hiirele/*/
+   transform: scale(1.2);
+}
+
+.footer {
+    background-color: #d1ba9f;
+    font-size: 1.5rem;
+    height: 400px;
+    text-align: center;
+    margin-top: -150px;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-top: 200px;
+}
+
+.footer ul li a {
+    color: #f1e7dd;
+    text-decoration: none;
+    margin: 1rem;
+    
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgb(160, 145, 129);
+}
+
+.copyright {
+    color: #e5d9cc;
+}
